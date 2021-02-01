@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="magica">
+        <meta name="keywords" content="magica, joyeria, libros">
+        <link rel="stylesheet" href="main.css">
+        <title>MAGICA</title>   
+		<style type="text/css">
+            .volver{
+                display:none;
+                text-align: center;
+                padding: 10px;
+                font-size: 20px;
+                text-decoration:underline;
+                color: black;
+                
+            }
+            
+            .container{
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                box-sizing: border-box;
+            }
+            
+            .container .card{
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s ease;
+            }
+            
+            .container .card:hover{
+                transform: translate(-15px);
+                box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+            }
+            
+            .container .card img{
+                box-sizing: border-box;
+                background-size: cover;
+                max-width: 100%;
+                max-height: 300px;
+            }
+            
+            .container .card .contenido{
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .container .card .contenido p{
+               line-height: 1.5;
+                color: #6a6a6a;
+            }
+            
+            .container .card .contenido h3{
+                font-weight: 400;
+                margin-bottom: 15px;
+            }
+            
+            .container .card .contenido a{
+                text-decoration: none;
+                display: inline-block;
+                padding: 10px;
+                margin-top: 10px;
+                color: cornflowerblue;
+                border: 1px solid cornflowerblue;
+                border-radius: 4px;
+                transition: all 0.25s ease;
+            }
+            
+            .container .card .contenido a:hover{
+                background: deepskyblue;
+                color: white;
+            }
+            
+            .seccion1{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                background-color: white;
+                display: flex;
+            }
+            
+            .seccion2{
+		        box-sizing: border-box;
+                background-size: cover;
+		        background-color: darkorange;
+		        padding: 30px;
+                border-top: 1px;
+                border-top-style: dashed;
+                border-top-color: white;
+	        }
+            
+            @media(max-width:768px){
+                nav{
+                    display: none;
+		        }
+                
+                .volver{
+                    display:block;
+                }
+	        }	
+		</style>
+    </head>
+    <body>
+        <header>
+            <img src="imagenes/TopBanner.jpg" class="topbanner">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="acercade.html">ACERCA DE</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="documentacion.html">DOCUMENTACION</a></li>
+                <li><a href="temploMagico.html">TEMPLO MAGICO</a></li>
+                <li><a href="cafeHermite.html">CAFE L´HERMITE</a></li>
+            </ul>
+        </nav>
+        <section class="seccion1">
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="imagenes/Producto1.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Joyeria</h3>
+                   <p>Bisuteria, Collares y Anillos</p>
+                   <a href="joyeria.html">Ver Catalogo de Joyeria</a>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="imagenes/Producto2.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Utensilios Magicos</h3>
+                   <p>Varitas Magicas, Velas y Tablas</p>
+                   <a href="utensiliosMagicos.html">Ver Catalogo de Utensilios Magicos</a>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="imagenes/Producto3.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Literatura</h3>
+                   <p>Grimorios y Libros</p>
+                   <a href="literatura.html">Ver Catalogo de Libros</a>
+               </div>
+            </div>
+        </div>           
+        </section>
+        <a href="index.html" class="volver">Inicio</a>
+        
+        <section class="seccion2">
+            <table class="tabla">
+            <tr>
+                <td>
+                    <ul>
+                       <li>Sitio</li>
+                       <li><a href="index.html">Inicio</a></li>
+		               <li><a href="acercade.html">Acerca De</a></li>
+		               <li><a href="productos.html">Productos</a></li>
+                       <li><a href="documentacion.html">Documentacion</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Productos</li>
+                    <li><a href="productos.html">Productos</a></li>
+                       <li><a href="joyeria.html">Joyeria</a></li>
+		               <li><a href="utensiliosMagicos.html">Utensilios Megicos</a></li>
+		               <li><a href="literatura.html">Literatura</a></li>
+                   </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Otros Servicios</li>
+                       <li><a href="temploMagico.html">Templo Magico</a></li>
+		               <li><a href="cafeHermite.html">Cafe L´Hermite</a></li>
+                       <li>Contacto</li>
+                       <li><a href="https://www.facebook.com/Magica-Webpage-101394748453634">Facebook Magica</a></li>
+                   </ul>
+                </td>
+            </tr>
+        </table>
+        </section>
+        <footer>
+            <p>© Derechos Reservados MAGICA Company</p>
+        </footer>
+    </body>
+</html>
