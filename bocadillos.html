@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="L'HERMITE">
+        <meta name="keywords" content="L'Hermite, Cafe">
+        <link rel="stylesheet" href="mainCafe.css">  
+        <title>Cafe L'Hermite</title>
+        <style type="text/css">
+            body{
+                background-image: url("imagenes/postrefondo.jpg");
+                background-repeat: no-repeat;
+                box-sizing: border-box;
+                background-size: cover;
+            }
+
+            figure{
+                border-bottom: 1px white solid;
+                border-top: 1px white solid ;
+                border-color: white;
+                border-radius: 20px;
+            }
+
+            .container .card{
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s ease;
+                background-color: rgba(237, 124, 238, .8);
+            }
+            
+            .container .card:hover{
+                box-shadow: 0 12px 16px white;
+                background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+                backdrop-filter: blur(10px);
+            }
+            
+            .container .card img{
+                box-sizing: border-box;
+                background-size: cover;
+                max-width: 100%;
+                max-height: 300px;
+                border-radius: 20px;
+            }
+            
+            .container .card .contenido{
+                padding: 15px;
+                text-align: center;
+            }
+            
+            .container .card .contenido p{
+                color: rgb(97,94,97);
+                font-size: 16px;
+            }
+
+            .container .card .contenido h4{
+                color: white;
+            }
+            
+            .seccion1{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            
+             .seccion2{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                display: flex;
+                background-color: rgba(255, 255, 255, 0.1);
+                border-style: none;
+            }   
+            
+            .seccion3{
+		       box-sizing: border-box;
+               background-size: cover;
+		       background-color: rgb(237, 124, 238);
+		       padding: 30px;
+               border-top: 1px;
+               border-top-style: inset;
+               border-top-color: white;
+	        }
+            
+            @media(max-width:768px){
+                  .container .card .contenido p{
+                       line-height: 1.5;
+                       color: #FFF;
+                       font-size: 10px;
+                  }  
+            }
+		</style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="cafeHermite.html">Inicio</a></li>
+                <li><a href="productosHermite.html">Productos</a></li>
+                <li><a href="index.html">MAGICA</a></li>
+            </ul>
+        </nav>
+        
+        <section class="seccion1">   
+            <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/pandezanahoria.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Pan de Zanahoria</h4>
+                   <p>Pan de Zanahoria</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/paydequeso.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Pay de Queso</h4>
+                   <p>Pay de queso philadelphia con base de galleta</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/galletasdemantequilla.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Galletas</h4>
+                   <p>Galletas de mantequilla con azucar</p>
+               </div>
+            </div>
+        </div>    
+        </section>
+        
+        <section class="seccion2">
+            <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/paydeelote.png" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Pay de Elote</h4>
+                   <p>Pay de elote con base de galleta</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/rosca.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Rosca</h4>
+                   <p>Rosca rellena de queso philadelphia y frutos</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="container">
+            <div class="card">
+               <figure>
+                   <img src="Products/bizcocho.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Bizcocho</h4>
+                   <p>Bizcocho casero</p>
+               </div>
+            </div>
+        </div> 
+        </section>
+        
+        <section class="seccion3">
+        <table class="tabla">
+            <tr>
+                <td>
+                    <ul>
+                       <li>Sitio</li>
+                       <li><a href="cafeHermite.html">Inicio</a></li>
+		               <li><a href="productosHermite.html">Productos</a></li>
+		               <li><a href="index.html">Magica</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Productos</li>
+                        <li><a href="productosHermite.html">Productos</a></li>
+		               <li><a href="bebidas.html">Bebidas</a></li>
+		               <li><a href="bocadillos.html">Bocadillos</a></li>
+                   </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Contacto</li>
+                       <li><p>Visitanos en 
+                              Direccion: Calle: Numero: CP:<br>
+                              <a href="https://raulgallegos.github.io/MyWebPage/">
+                              Mas Informacion en mi WebPage</a></p></li>
+                   </ul>
+                </td>
+            </tr>
+        </table>
+	</section>
+        <footer>
+            <p>© Derechos Reservados MAGICA Company</p>
+        </footer>
+        <a class="gotopbtn" href="#"><img src="imagenes/upArrow.png"/></a>
+    </body>
+</html>
