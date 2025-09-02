@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<title>MAGICA</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Raul Gallegos Contreras">
+	<meta name="keywords" content="magica,joyeria,utensilios magicos,ocultismo">
+	<meta name="description" content="Magica ofrece una gran variedad de productos de Joyería, Utensilios Magicos, Literatura Ocultista entre muchos otros.">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+
+	<style type="text/css">
+
+		.volver{
+                display:inline-flex;
+                text-align: center;
+                padding: 10px;
+                font-size: 15px;
+                text-decoration:underline;
+                color: black;
+                
+            }
+            
+            .volver:hover{
+                color:white;
+            }
+
+		.content{
+		    margin: 0;
+            padding: 0;
+	        background-color: #EEEEEE;
+	        background-size: cover;
+        }
+
+        /*CARTAS*/
+		.cards-grid{
+	        display: flex;
+	        background-size: cover;
+	        align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        .cardcontainer{
+                width: 100%;
+                max-width: 100%;
+                display:flex;
+                justify-content: center;
+                box-sizing: border-box;
+                width: 400px;
+                height: 450px;
+                margin-left: 10px;
+            }
+            
+            .cardcontainer .card{
+                width: 100%;
+                border-radius: 20px;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s ease;
+                border: 0.5px;
+                border-color: rgba(0,0,0,0.3);
+                border-style: solid;
+            }
+            
+            .cardcontainer .card:hover{
+                transform: translate(-15px);
+                box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+            }
+            
+            .cardcontainer .card img{
+                background-size: cover;
+                max-width: 100%;
+                max-height: 250px;
+                border-radius: 20px;
+                border: 3px;
+                border-color: rgba(0,0,0,0.3);
+                border-style: solid;
+            }
+            
+            .cardcontainer .card .contenido{
+                padding: 5px;
+                text-align: center;
+            }
+            
+            .cardcontainer .card .contenido p{
+               line-height: 1.5;
+                color: #6a6a6a;
+            }
+            
+            .cardcontainer .card .contenido h3{
+                font-size: 14px; 
+            }
+
+        @media screen and (max-width: 1024px){
+        	.cards-grid{
+        		flex-direction: column;
+        	}
+
+	        .content{
+	            background-image: none;
+	        }
+        }
+	</style>
+</head>
+
+<body>
+	<div class="primary">
+		<a href="#" class="button"><span>Tienda Online</span></a>
+	</div>
+	<div class="wrapper">
+	<header class="header"><img src="Imagenes/TopBanner.png" alt="null" class="backgroundimg"><h2 class="logo">Magica<span>Ornamenta</span></h2></header>
+	<nav>
+		<ul class="nav-ul">
+			<li class="nav-li"><a href="index.html" title="Inicio" class="nav-li-a">Inicio</a></li>
+			<li class="nav-li"><a href="acercade.html" title="Acerca de" class="nav-li-a">Acerca de</a></li>
+			<li class="nav-li"><a href="productos.html" title="Productos" class="nav-li-a">Productos</a></li>
+			<li class="nav-li"><a href="documentacion.html" title="Documentación" class="nav-li-a">Documentación</a></li>
+			<li class="nav-li"><a href="temploMagico.html" title="Templo Magico" class="nav-li-a">Templo Magico</a></li>
+			<li class="nav-li"><a href="cafeHermite.html" title="Cafe L´Hermite" class="nav-li-a">Cafe L'Hermite</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+	<main class="content">
+		<div class="cards-grid">
+            <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/Egipcio.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Anillo Egipcio Dorado con Jeroglificos</h3>
+                   <p>Precio: $30.00</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/GranTetragrammaton.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Gran Anillo Tetragrammaton</h3>
+                   <p>Precio: $100.00</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/AnkhHueso.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Cadena con Cruz Ankh en Hueso</h3>
+                   <p>Precio: $30.00</p>
+               </div>
+            </div>
+        </div>     
+		</div>
+
+		<div class="cards-grid"> 
+        <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/AnkhPequenaGrande.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Cadena con Cruz Ankh en Dorado</h3>
+                   <p>Precio: Grande $70.00 | Pequeña $50.00</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/PentagramaDorado.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Cadena con Pentagrama en Dorado</h3>
+                   <p>Precio: $50.00</p>
+               </div>
+            </div>
+        </div>
+            
+        <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/PentagramaPlateado.webp" alt="">
+               </figure>
+               <div class="contenido">
+                   <h3>Cadena con Pentagrama en Plateado</h3>
+                   <p>Precio: $50.00</p>
+               </div>
+            </div>
+        </div>            
+		</div>
+	</main>
+    </div>
+    <a href="productos.html" class="volver">Volver a Productos</a>
+    <a href="joyeria.html" class="volver">1</a>
+    <a href="joyeriaPagina1.html" class="volver">2</a>
+    <a href="joyeriaPagina2.html" class="volver">3</a>
+    <a href="joyeriaPagina3.html" class="volver">4</a>
+    <a href="joyeriaPagina4.html" class="volver">5</a>
+    <a href="joyeriaPagina5.html" class="volver">6</a>
+    <a href="joyeriaPagina6.html" class="volver">7</a>
+    <a href="joyeriaPagina7.html" class="volver">8</a>
+    <section class="links">
+    	<table class="table">
+            <tr>
+                <td>
+                    <ul>
+                       <li>Sitio</li>
+                       <li><a href="index.html" title="Inicio">Inicio</a></li>
+		               <li><a href="acercade.html" title="Acerca">Acerca De</a></li>
+		               <li><a href="productos.html" title="Productos">Productos</a></li>
+                       <li><a href="documentacion.html" title="Documentación">Documentación</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Productos</li>
+                    <li><a href="productos.html" title="Productos">Productos</a></li>
+                       <li><a href="joyeria.html" title="Joyería">Joyería</a></li>
+		               <li><a href="utensiliosMagicos.html" title="Utensilios Magicos">Utensilios Magicos</a></li>
+		               <li><a href="literatura.html" title="Literatura">Literatura</a></li>
+                   </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Otros Servicios</li>
+                       <li><a href="temploMagico.html" title="Templo Magico">Templo Magico</a></li>
+		               <li><a href="cafeHermite.html" title="Cafe L´Hermite">Cafe L´Hermite</a></li>
+                       <li>Contacto</li>
+                       <li><p>Visitanos en 
+                              Direccion: Calle: Numero: CP:<br>
+                              <a href="https://raulgallegos.github.io/MyWebPage/indexespanol.html" target="_blank">
+                              Mas Informacion en mi WebPage</a></p></li>
+                   </ul>
+                </td>
+            </tr>
+        </table>
+	</section>
+
+	<footer class="footer">
+		<small>©Derechos Reservados Magica Company</small>
+	</footer>
+    </div>
+    <a class="gotopbtn" href="#"><img src="Imagenes/upArrow.png"/></a>
+</body>
+</html>
