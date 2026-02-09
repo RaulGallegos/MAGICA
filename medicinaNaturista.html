@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<title>Templo Magico</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Raul Gallegos Contreras">
+	<meta name="keywords" content="cursos,ocultismo">
+	<meta name="description" content="Cursos de Ocultismo y Lenguas Antiguas de Magica, venta de medicina naturista y olistica.">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="layouttemplomagico.css" media="screen">
+
+    <style type="text/css">
+        /*CARDS*/
+        .cards-grid{
+            display: flex;
+            background-size: cover;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            justify-items: center;
+        }
+        
+        .cardcontainer{
+                width: 100%;
+                max-width: 100%;
+                display: flex;
+                justify-content: center;
+                width: 400px;
+                height: 450px;
+                margin-left: 10px;
+            }
+            
+            .cardcontainer .card{
+                width: 100%;
+                border-radius: 40px;
+                box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+                overflow: hidden;
+                margin: 20px;
+                text-align: center;
+                transition: all 0.25s ease;
+                background-color: rgba(139, 163, 104, .8);
+            }
+            
+            .cardcontainer .card:hover{
+                box-shadow: 0 5px 5px white;
+                background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0));
+                backdrop-filter: blur(10px);
+            }
+            
+
+            .cardcontainer .card img{
+                background-size: cover;
+                max-width: 90%;
+                max-height: 300px;
+                border-radius: 60px;
+                border: 5px;
+                border-color: rgba(255,255,255,0.5);
+                border-style: solid;
+            }
+            
+            .cardcontainer .card .contenido{
+                padding: 1px;
+                text-align: center;
+                display: block;
+                margin-top: -10px;
+            }
+            
+            .cardcontainer .card .contenido p{
+                line-height: 1.5;
+                color: white;
+            }
+            
+            .cardcontainer .card .contenido h3{
+                font-size: 14px; 
+            }
+
+        @media screen and (max-width: 1024px){
+            .cards-grid{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+     <header>
+        <img src="Imagenes/enchantedwood.jpg" class="imagenSeccion2">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="temploMagico.html" title="Inicio">Inicio</a></li>
+            <li><a href="medicinaNaturista.html" title="Medicina Naturista">Medicina</a></li>
+            <li><a href="index.html" title="Magica">MAGICA</a></li> 
+        </ul>
+    </nav>
+    <section class="Seccion1">
+         <div class="cards-grid">   
+         <div class="cardcontainer">
+            <div class="card">
+               <figure>
+                   <img src="Productos/capsulas.jpg" alt="">
+               </figure>
+               <div class="contenido">
+                   <h4>Capsulas de hierbas</h4>
+                   <p>Capsulas de hierbas curativas y medicinales</p>
+               </div>
+            </div>
+        </div>              
+        </div>
+    </section>
+    <section class="links">
+        <table class="table">
+            <tr>
+                <td>
+                    <ul>
+                       <li>Sitio</li>
+                       <li><a href="temploMagico.html" title="Inicio">Inicio</a></li>
+                       <li><a href="medicinaNaturista.html" title="Medicina Naturista">Medicina</a></li>
+                       <li><a href="index.html" title="Magica">Magica</a></li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                       <li>Contacto</li>
+                       <li><p>Visitanos en 
+                              Direccion: Calle: Numero: CP:<br>
+                              <a href="https://raulgallegos.github.io/MyWebPage/indexespanol.html" target="_blank">
+                              Mas Informacion en mi WebPage</a></p></li>
+                   </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <footer class="footer">
+        <small>© Derechos Reservados MAGICA Company</small>
+    </footer>
+    <a class="gotopbtn" href="#"><img src="Imagenes/upArrow.png"/></a>
+</body>
+</html>

@@ -1,0 +1,280 @@
+@charset "UTF-8";
+
+/*CSS CODE*/
+html{
+	box-sizing: border-box;
+	background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,*::before,*::after{
+	box-sizing: inherit;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: verdana;
+	background: linear-gradient(to right, #e8bb07, white);
+}
+
+.header{
+	background: linear-gradient(to right, #e8bb07, white);
+	border-bottom: 0.5px;
+    border-bottom-style: inset;
+    border-bottom-color: rgba(255, 255, 255, .8); 
+    background-size: cover;
+}
+
+.backgroundimg{
+	max-width: 100%;
+}
+
+.logo{
+	color: white;
+	font-size: 30px;
+}
+
+span{
+	color: darkorange;
+}
+
+/*NAV*/
+nav{
+    width: 100%;
+    max-width: 100%;
+    height: 50px;
+    background: #e8bb07;
+    opacity: .8;
+    display: block;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    transition: all 550ms ease;
+}
+
+nav ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    background: #e8bb07;
+}
+
+nav ul li a{
+    display: block;
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+nav ul li a:hover,
+nav ul li a:active
+nav ul li a:focus{
+    background: yellow; 
+    color: darkgoldenrod;
+    transition: all 550ms ease;
+    border-radius: 20px;
+    border-collapse: collapse;
+}
+
+/*LINKS*/
+.links{
+	display: flex;
+    background-size: cover;
+    background-color: #877e5c;
+	padding: 30px;
+    border-top: 0.5px;
+    border-top-style: inset;
+    border-top-color: rgba(255, 255, 255, .3); 
+    justify-content: center;
+	justify-items: center;
+	align-items: center;
+	align-content: center;
+}
+
+.table{
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        margin: auto;
+        border-collapse: separate;
+    }
+    
+    .table ul{
+        list-style: none;
+        margin-left: 70px;
+    }
+    
+    .table ul li a{
+        text-decoration: none;
+        color: #000;
+        font-size: 15px;
+    }
+    
+    .table ul li a:hover{
+        color: whitesmoke;
+        transition: all 550ms ease;
+    }
+
+ /*FOOTER*/
+ .footer{
+	background-color: #877e5c;
+	color: dark;
+    text-align: center;
+    letter-spacing: 0.05em;
+    border-top: 0.5px;
+    border-top-style: inset;
+    border-top-color: rgba(255, 255, 255, .3);
+    font-size: 14px;
+    padding: 20px;
+}
+
+ /*FLOAT BUTTONS*/
+ .primary{
+	position: fixed;	
+	bottom: 40px;
+	right: 150px;
+	z-index: 1;
+}
+
+.button{
+	border: 1px;
+    border-color: rgba(0,0,0,0.3);
+    border-style: solid;
+	border-radius: 20px;
+	width: 160px;
+	height: 40px;
+	background-color: white;
+	opacity: .7;
+	display: inline-block;
+	outline: 0;
+	padding-top: 0.40rem;
+	padding-bottom: 0.40rem;
+	text-align: center;
+	text-decoration: none;	
+}
+
+.button span{
+	box-sizing: border-box;
+	background-size: cover;
+	color: black;
+	font-weight: normal;
+	font-size: 19px;
+}
+
+.button:hover{
+	background-color: gold;
+	transition: all 550ms ease;
+}
+
+.gotopbtn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: white;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    opacity: .7;
+    border-radius: 20px;
+}
+
+.gotopbtn img{
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+}
+
+.gotopbtn:hover{
+    background-color: rgb(246, 217, 87);
+    transition: all 550ms ease;;
+}
+
+
+/*640px BREAKPOINT*/
+@media screen and (min-width: 40em){
+	.header{
+	    padding: 1.5em;
+	    text-align: left;
+    }
+}
+
+/*1024px BREAKPOINT*/
+@media screen and (min-width: 64em){
+	.header h2{
+    	display: none;
+    }
+
+    .header span{
+    	display: none;
+    }
+}
+
+/*1280px BREAKPOINT*/
+@media screen and (min-width: 80em){
+	
+}
+
+@media screen and (max-width: 1024px/*920px*/){
+	nav{
+			position: sticky;
+			width: 70%;
+			margin-left: -100px;
+			top: 0;
+		}
+		
+	nav ul{
+		flex-direction: column;
+	}
+		
+	.table{
+           width:100%;
+           border-right: hidden;
+        }
+
+        .table ul{
+            margin-left: 0px;
+            margin-right: 0px;
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+
+        .table thead {
+           display: none;
+        }
+
+        .table tr:nth-of-type(2n) {
+           background-color: inherit;
+        }
+
+        .table tr td:first-child {
+          
+        }
+
+        .table tbody td {
+           display: block;
+           text-align:center;
+        }
+
+        .table tbody td:before {
+           content: attr(data-th);
+           display: block;
+           text-align:center;
+        }
+
+     .backgroundimg{
+		display: none;
+	}
+}
